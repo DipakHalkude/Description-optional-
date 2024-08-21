@@ -1,0 +1,195 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Dashboard Container */
+  .dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .dashboard:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 97%;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+  }
+  
+  .search-bar:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  
+  /* Category Styles */
+  .category {
+    margin-bottom: 50px;
+  }
+  
+  .category h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .category h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 50px;
+    background-color: #007bff;
+    border-radius: 2px;
+  }
+  
+  /* Widget List */
+  .widget-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Widget Styles */
+  .widget {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 30px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .widget:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .widget h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .widget p {
+    font-size: 1em;
+    color: #7f8c8d;
+  }
+  
+  /* Remove Widget Button */
+  .remove-widget {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-widget:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Add Widget Form */
+  .add-widget-form {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .add-widget-form:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .add-widget-form select,
+  .add-widget-form input,
+  .add-widget-form button {
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-widget-form input:focus,
+  .add-widget-form select:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  
+  .add-widget-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add-widget-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .widget {
+      width: calc(50% - 15px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .widget {
+      width: 100%;
+    }
+  
+    .category h2 {
+      font-size: 1.8em;
+    }
+  
+    .dashboard {
+      padding: 15px;
+    }
+  }
+  
